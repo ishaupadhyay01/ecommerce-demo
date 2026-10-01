@@ -1,0 +1,10 @@
+<h1>Shop</h1>
+<ul id="list"></ul>
+<script>
+  const items = [
+    { name: "T-Shirt", price: 499 },
+    { name: "Sneakers", price: 1999 },
+  ];
+  document.getElementById("list").innerHTML =
+    items.map(p => `<li>${p.name} - ₹${p.price}</li>`).join("");
+</script>
